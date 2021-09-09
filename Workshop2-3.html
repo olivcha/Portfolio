@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCodes</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <p>
+        <strong>
+
+        </strong>
+    </p>
+    <br />
+    <button>
+        Apply Now
+    </button>
+</section>
+<script>
+
+    function updateHeading(newHeading) {
+        let heading = document.querySelector("h1");
+        heading.innerHTML = newHeading;
+    }
+
+    function canApply() {
+        let age = prompt("How old are you?");
+        return age >= 18;
+        }
+    }
+
+
+    function apply() {
+        let firstName = prompt("What is your first name?");
+        let age = prompt("How old are you?");
+        let heading = document.querySelector("h1");
+
+        if (canApply()) {
+            updateHeading = "Hi $(firstName)! Welcome to SheCodes";
+        } else {
+            updateHeading =
+            "Sorry $(firstName), you can't apply to SheCodes.";
+        }
+    }
+
+    let applyButton = document.querySelector("button");
+    applyButton.addEventListener("click", apply);
+
+</script>
+</body>
+</html>

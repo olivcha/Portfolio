@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Book of Travels</title>
+    <style>
+      .wrapper {
+        background: transparent
+          url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/776/original/nature-2384_1920.jpg?1631051707)
+          no-repeat center center;
+        margin: 0 50px;
+        border-radius: 5px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      p {
+        text-align: left;
+        margin: auto;
+        padding: 20px 200px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      footer {
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+        border-radius: 5px;
+        border: none;
+        padding: 15px 50px;
+        font-size: 18px;
+        box-shadow: 1px 1px 2px #888888;
+      }
+
+      button:hover {
+        background: #e6b980;
+        cursor: pointer;
+        transition: width 2s ease-in-out 1s;
+      }
+
+      .intro {
+        background: white;
+        opacity: 80%;
+        color: black;
+        padding: 20px 60px;
+        margin: 15px 90px;
+        border-radius: 10px;
+        font-family: "Courier New", Courier, monospace;
+        border-color: beige;
+        border: 1px;
+      }
+
+      .topnav {
+        background-color: #a55637;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 40px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #c79b60;
+        color: white;
+      }
+
+      .topnav a.active {
+        background-color: #c79b60;
+        color: white;
+      }
+
+      .oneBlog {
+        background: white;
+        opacity: 70%;
+        border-radius: 10px;
+      }
+
+      .oneBlog:hover {
+        background: white;
+        opacity: 100%;
+      }
+
+      .blogText {
+        color: black;
+        padding: 20px 60px;
+        margin: 15px 90px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .blogTitle {
+        color: black;
+        padding: 5px 60px;
+        margin: 10px 90px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #a55637;
+        border-radius: 5px;
+        margin: 5px 0px;
+        height: 40px;
+        line-height: 40px;
+      }
+
+      .blogBlock {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px 60px;
+        margin: 20px 50px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: #e4d5c8">
+    <span>
+      <a href="#home"
+        ><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/782/original/header.jpg?1631056326"
+          alt="Book of Travels"
+          class="logo"
+      /></a>
+    </span>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a
+        href="#news"
+        class="blogLink"
+        type="button"
+        onclick="smoothScroll(document.getElementById('blogBlock'))"
+        >Blog</a
+      >
+      <a href="https://www.linkedin.com/in/oliviachavigny/" target="”_blank”"
+        >Contact</a
+      >
+      <a href="https://www.instagram.com/olivia_helen_/" target="”_blank”"
+        >Gallery</a
+      >
+    </div>
+    <br />
+    <div class="wrapper">
+      <br />
+      <p class="intro">
+        <strong>Olivia Chavigny de Lachevrotiere</strong> grew up in Poland, but
+        did her BA in the UK and in the Netherlands. Working in Global Marketing
+        at Schneider Electric by the day, her nights are often spent exploring
+        psychology, history, and technology. Having run an NGO herself, she is
+        passionate about making change, and recently became a volunteer writer
+        at Kinder. Travel is her way of saying YES to the world, and finding her
+        way to acceptance.
+      </p>
+      <br />
+    </div>
+    <br />
+    <div class="blogBlock" id="blogBlock">
+      <h1>Blog zone</h1>
+      <br />
+      <br />
+      <div class="oneBlog">
+        <h2 class="blogTitle">Croatia 🌊</h2>
+        <p class="blogText">
+          Croatia is famous for its Dalmatian coast and breathtaking islands.
+          And even though the country is one of the newer members of the
+          European Union, its beauty can bring anyone to their knees. As
+          <a href="https://en.wikipedia.org/wiki/Croatia">Wikipedia</a> states,
+          "tourism is a significant source of revenue, with Croatia ranked among
+          the 20 most popular tourist destination".
+        </p>
+        <button>Read more...</button>
+      </div>
+      <br />
+      <div class="oneBlog">
+        <h2 class="blogTitle">England ☕</h2>
+        <p class="blogText">
+          England will always have a special place in my heart ever since I've
+          studied in Sheffield, South Yorkshire. I've seen my share of English
+          cities when going on day trips to catch a break in between my studies.
+          My favourite places include Bakewell, Bath, Bournemouth, and of
+          course, London.
+        </p>
+        <button>Read more...</button>
+      </div>
+      <br />
+      <div class="oneBlog">
+        <h2 class="blogTitle">Greece 🌞</h2>
+        <p class="blogText">
+          It was my dream to visit Greece for a few years before it was the
+          right moment for me to go. And finally, this time came in 2021 when I
+          went to Corfu for my annual leave. It was above amazing.
+        </p>
+        <button>Read more...</button>
+      </div>
+      <br />
+      <div class="oneBlog">
+        <h2 class="blogTitle">Japan 🍣</h2>
+        <p class="blogText">
+          My trip to Japan changed my attitude towards food, towards culture,
+          and society. According to
+          <a href="https://en.wikipedia.org/wiki/Japan">Wikipedia</a>, "Japan
+          has one of the world's highest life expectancies, though it is
+          experiencing a decline in population. The culture of Japan is well
+          known around the world, including its art, cuisine, music, and popular
+          culture, which encompasses prominent comic, animation and video game
+          industries."
+        </p>
+        <button>Read more...</button>
+      </div>
+      <br />
+      <div class="oneBlog">
+        <h2 class="blogTitle">Belgium & Netherlands 🧀🍺</h2>
+        <p class="blogText">
+          Once I moved for my Study Abroad to Amsterdam in the Netherlands,
+          travelling between the Benelux countries became very easy and felt as
+          if it's obligatory. Afterall, it's a great opportunity to get to know
+          a new culture. I went to a few different places in the Netherlands,
+          and travelled to Antwerp, Bruges, and Brussels all by myself.
+        </p>
+        <button>Read more...</button>
+      </div>
+      <br />
+      <div class="oneBlog">
+        <h2 class="blogTitle">Czech Republic 🌄</h2>
+        <p class="blogText">
+          Czechia and Slovakia will always be somehow close to me due to their
+          actual, physical proximity from my home country, Poland. Or, rather,
+          the fact that we're sharing borders. That is why I went to Slovakia
+          and Czechia multiple times as a child when going on hiking holidays in
+          the mountains. I've also studied Czech language for 2 years, finishing
+          with an intermediate level of fluency.
+        </p>
+        <button>Read more...</button>
+      </div>
+      <br />
+      <div class="oneBlog">
+        <h2 class="blogTitle">Spain ⛱</h2>
+        <p class="blogText">
+          I've only been to Barcelona and Ibiza, so I cannot say that I know
+          Spain well. BUT for what it's worth, I know a lot of Spanish people!
+        </p>
+        <button>Read more...</button>
+      </div>
+    </div>
+    <br />
+    <br />
+    <footer>
+      Coded by
+      <a href="https://www.linkedin.com/in/oliviachavigny/"
+        >Olivia Chavigny de Lachevrotiere</a
+      >
+    </footer>
+    <br />
+    <script>
+      window.smoothScroll = function (target) {
+        var scrollContainer = target;
+        do {
+          //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+        } while (scrollContainer.scrollTop == 0);
+
+        var targetY = 0;
+        do {
+          //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+        } while ((target = target.offsetParent));
+
+        scroll = function (c, a, b, i) {
+          i++;
+          if (i > 30) return;
+          c.scrollTop = a + ((b - a) / 30) * i;
+          setTimeout(function () {
+            scroll(c, a, b, i);
+          }, 20);
+        };
+        // start scrolling
+        scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+      };
+
+      function login() {
+        let username = prompt("Username:");
+        let password = prompt("Password:");
+        if (username != "" && password != "") {
+          alert(
+            "Thank you for your interest " +
+              username +
+              ". The blog is currently under development."
+          );
+        } else {
+          login();
+        }
+      }
+      let readMore = document.querySelector("button");
+      readMore.addEventListener("click", login);
+    </script>
+  </body>
+</html>
